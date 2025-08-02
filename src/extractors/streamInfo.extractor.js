@@ -58,7 +58,7 @@ async function extractStreamingInfo(id, name, type) {
       name,
       type
     );
-    return { streamingLink, servers, isMegaCloudError: true };
+    return { streamingLink, servers, isHeaderMegaCloud: true };
   } catch (error) {
     console.error("An error occurred:", error);
     return { streamingLink: [], servers: [] };
