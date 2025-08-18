@@ -57,6 +57,7 @@ export async function extractCharacter(id) {
       if (title && id) {
         animeography.push({
           title,
+          japanese_title,
           id,
           role: role.replace(" (Role)", ""),
           type,
